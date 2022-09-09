@@ -45,7 +45,7 @@ from functools import wraps
 
 app = Flask(__name__)
 ckeditor = CKEditor(app)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:changeme@172.20.0.2:5432/test_db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:changeme@db:5432/test_db'
 app.config['SECRET_KEY'] = "my super secret key that no one is supposed to know"
 
 
